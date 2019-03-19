@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,49 +30,42 @@
                                 <rect key="frame" x="0.0" y="10" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="nameCell" rowHeight="120" id="FXX-bR-wuU" customClass="TableViewCell" customModule="d02" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="nameCell" rowHeight="120" id="FXX-bR-wuU" customClass="TableViewCell" customModule="d02" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FXX-bR-wuU" id="nR8-L5-r2S">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqQ-vK-XKV">
-                                                    <rect key="frame" x="162" y="19" width="198" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2o-0u-Aw0">
-                                                    <rect key="frame" x="15" y="20" width="139" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="139" id="ImO-Ou-Blv"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2o-0u-Aw0">
+                                                    <rect key="frame" x="15" y="20" width="48" height="21"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqX-Cg-KGi">
-                                                    <rect key="frame" x="14" y="71" width="347" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="yUP-5o-Jji"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="14" y="65" width="112.5" height="27"/>
                                                     <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqQ-vK-XKV">
+                                                    <rect key="frame" x="329.5" y="19" width="30.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="MqQ-vK-XKV" firstAttribute="trailing" secondItem="dqX-Cg-KGi" secondAttribute="trailing" id="29J-B0-1M4"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="dqX-Cg-KGi" secondAttribute="bottom" constant="17" id="3Zb-ul-bsy"/>
-                                                <constraint firstItem="Q2o-0u-Aw0" firstAttribute="leading" secondItem="dqX-Cg-KGi" secondAttribute="leading" id="Ma9-R5-6dA"/>
-                                                <constraint firstItem="MqQ-vK-XKV" firstAttribute="leading" secondItem="Q2o-0u-Aw0" secondAttribute="trailing" constant="8" symbolic="YES" id="SD4-Db-pPN"/>
-                                                <constraint firstItem="MqQ-vK-XKV" firstAttribute="top" secondItem="nR8-L5-r2S" secondAttribute="topMargin" constant="8" id="fSz-LD-upL"/>
-                                                <constraint firstItem="dqX-Cg-KGi" firstAttribute="centerX" secondItem="nR8-L5-r2S" secondAttribute="centerX" id="fcy-Bf-z5E"/>
-                                                <constraint firstItem="Q2o-0u-Aw0" firstAttribute="baseline" secondItem="MqQ-vK-XKV" secondAttribute="baseline" id="hzH-RU-d6a"/>
-                                                <constraint firstItem="Q2o-0u-Aw0" firstAttribute="top" secondItem="nR8-L5-r2S" secondAttribute="topMargin" constant="9" id="ikA-9N-12E"/>
-                                                <constraint firstItem="Q2o-0u-Aw0" firstAttribute="leading" secondItem="nR8-L5-r2S" secondAttribute="leadingMargin" constant="-1" id="myc-lg-vh5"/>
-                                                <constraint firstItem="dqX-Cg-KGi" firstAttribute="top" secondItem="Q2o-0u-Aw0" secondAttribute="bottom" constant="30" id="uic-qJ-k9d"/>
+                                                <constraint firstItem="MqQ-vK-XKV" firstAttribute="top" secondItem="nR8-L5-r2S" secondAttribute="top" constant="19" id="4d0-Q4-Bbn"/>
+                                                <constraint firstItem="MqQ-vK-XKV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Q2o-0u-Aw0" secondAttribute="trailing" constant="50" id="8Kf-ep-6QI"/>
+                                                <constraint firstItem="dqX-Cg-KGi" firstAttribute="leading" secondItem="nR8-L5-r2S" secondAttribute="leading" constant="14" id="Dyd-hB-ftS"/>
+                                                <constraint firstItem="Q2o-0u-Aw0" firstAttribute="top" secondItem="nR8-L5-r2S" secondAttribute="top" constant="20" id="IeY-gZ-Ds6"/>
+                                                <constraint firstAttribute="bottom" secondItem="dqX-Cg-KGi" secondAttribute="bottom" constant="27.5" id="JPm-wT-F77"/>
+                                                <constraint firstItem="dqX-Cg-KGi" firstAttribute="top" secondItem="Q2o-0u-Aw0" secondAttribute="bottom" constant="24" id="Ylg-af-kUe"/>
+                                                <constraint firstAttribute="trailing" secondItem="MqQ-vK-XKV" secondAttribute="trailing" constant="15" id="Yxg-qb-DSj"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dqX-Cg-KGi" secondAttribute="trailing" id="d3u-wo-b6A"/>
+                                                <constraint firstItem="Q2o-0u-Aw0" firstAttribute="leading" secondItem="nR8-L5-r2S" secondAttribute="leading" constant="15" id="lTB-RR-EaU"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -118,7 +110,7 @@
             <objects>
                 <viewController title="2nd View" id="dl2-M0-ruY" customClass="SecondViewController" customModule="d02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jj6-Ma-YQN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cPN-VG-Odg">
@@ -187,7 +179,7 @@
                 <navigationController title="Navigation" automaticallyAdjustsScrollViewInsets="NO" id="RUd-9C-nd3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v0d-om-qnp">
-                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -201,6 +193,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Pwp-4U-IhR"/>
         <segue reference="Bgx-MK-Oou"/>
     </inferredMetricsTieBreakers>
 </document>
