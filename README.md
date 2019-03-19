@@ -13,5 +13,6 @@ xed .
 
 ## Usage
 
-![deathNote](https://media.giphy.com/media/21RwjhOOkfenUGteQz/source.gif | width=100)
+<img src="https://media.giphy.com/media/21RwjhOOkfenUGteQz/source.gif" width="400" height="790">
+
 
