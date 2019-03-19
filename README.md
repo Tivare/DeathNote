@@ -1,2 +1,2 @@
 # DeathNote
-iOS Bootcamp (Day02)
+iOS Bootcamp Day02
