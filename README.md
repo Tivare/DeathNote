@@ -15,6 +15,8 @@ cd DeathNote
 xed .
 ```
 
+For running the simulator press Cmd + R
+
 ## Demo
 
 <img src="https://media.giphy.com/media/21RwjhOOkfenUGteQz/source.gif" width="300">
