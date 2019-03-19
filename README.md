@@ -13,6 +13,6 @@ xed .
 
 ## Usage
 
-<img src="https://media.giphy.com/media/21RwjhOOkfenUGteQz/source.gif" width="400" height="790">
+<img src="https://media.giphy.com/media/21RwjhOOkfenUGteQz/source.gif" width="300">
 
 
